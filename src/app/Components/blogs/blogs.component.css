@@ -1,0 +1,60 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  
+  .line {
+    height: 5px;
+    width: 100px;
+    background-color: #c34142;
+    
+  }
+  .blogs {
+    height: 400px;
+    width: 80%;
+    /* background-color: aqua; */
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    height: 350px;
+    width: 30%;
+    margin: 20px;
+  }
+  .data {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .data h5 {
+    color: orangered;
+  }
+  .data h4 {
+    cursor: pointer;
+  }
+  .data h4:hover {
+    color: orangered;
+  }
+  .data p {
+    opacity: 0.5;
+    font-weight: bold;
+  }
+  .card img {
+    opacity: 0.7;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .card img:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .disabled{
+    all: unset;
+  }
+  

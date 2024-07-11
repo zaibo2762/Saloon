@@ -1,0 +1,88 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  
+  .line {
+    margin-bottom: 20px;
+    height: 5px;
+    width: 100px;
+    background-color: #c34142;
+  }
+  .pricing-container {
+   
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .pricing-toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .pricing-toggle{
+    margin: 10px;
+  }
+  
+  .pricing-plans {
+    
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .pricing-plan {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+  }
+  .pricing-plan:hover{
+    border: 2px solid #c34142;
+  }
+  .price {
+    font-size: 3rem;
+    /* font-weight: bold; */
+    color: #c34142; /* Red for pricing */
+    margin-top: 30px;
+  }
+  
+  .description {
+    margin-top: 30px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .features {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .btn-get-started {
+    background-color: #c34142; /* Red for button */
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+  }
+  
+  .btn-get-started:hover {
+    background-color: red; /* Darker red on hover */
+  }

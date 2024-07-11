@@ -1,0 +1,39 @@
+<div class="client">
+    <div class="heading">
+        <h2>Our Client Feedback</h2>
+        <div class="line"></div>
+    </div>
+    <div class="testimonials">
+        <div class="testimonial-container">
+            
+            <div class="testimonial-card">
+              <div class="testimonial-image">
+                <img [src]="testimonials[currentIndex].image" alt="Tahir Shah">
+              </div>
+              <div class="testimonial-content">
+                <p>{{ testimonials[currentIndex].content }}</p>
+                <div class="testimonial-rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+              <div class="testimonial-author">
+                <h4>{{ testimonials[currentIndex].author }}</h4>
+                <p>{{ testimonials[currentIndex].company }}</p>
+              </div>
+            </div>
+            <div class="testimonial-navigation">
+                <button class="testimonial-prev" (click)="prevTestimonial()"><fa-icon [icon]="prev"></fa-icon></button>
+                <button class="testimonial-next" (click)="nextTestimonial()"><fa-icon [icon]="next"></fa-icon></button>
+              </div>
+            <div class="testimonial-pagination">
+                @for (dot of paginationDots; track dot) {
+              <div class="testimonial-dot" [ngClass]="{'active': dot === currentIndex}"></div>
+                }
+            </div>
+          </div>
+    </div>
+</div>

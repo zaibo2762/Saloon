@@ -1,0 +1,138 @@
+.header{
+    background-image: url('../../../assets/headerbackground.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.navhover a{
+    color: black;
+}
+.navhover a:hover{
+    color: #c34142;
+    cursor: pointer;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+.nav-item:hover{
+    background-color: #ffffff;
+    border-radius: 50px;
+    overflow: hidden; 
+}
+
+.btn-store {
+  color: #c34142;
+  width: 200px;
+  padding-top: 20px;
+  padding: 12px 20px !important;
+  border-color: #c34142 !important;
+  border-radius: 40px;
+}
+.btn-store:focus,
+.btn-store:hover {
+  color: #ffffff !important;
+  background-color: #c34142;
+}
+.btn-store .btn-label {
+  display: block;
+  text-align: left;
+  line-height: 1;
+  /* padding-top:10px; */
+  font-size: 12px;
+  padding-left: 15px;
+}
+.btn-store .btn-caption {
+  font-size: 16px;
+  font-weight: 500;
+  /* padding-top:10px; */
+}
+
+.c1 {
+  width: 210px;
+}
+
+
+.btn-top {
+  color: #c34142;
+  width: 250px;
+  height: 50px;
+  padding-top: 20px;
+  padding: 12px 20px !important;
+  border-color: #c34142 !important;
+}
+
+
+.btn-top:hover {
+  color: #ffffff !important;
+  background-color: #c34142;
+}
+.btn-top .btn-label {
+  display: block;
+  text-align: left;
+  line-height: 1;
+  margin-left: 20px;
+  /* padding-top:10px; */
+  /* font-size: 20px;
+  padding-left: 15px;
+  margin-top: 15px; */
+}
+.btn-top .btn-caption {
+  font-size: 16px;
+  /* font-weight: 700; */
+  /* padding-top:10px; */
+}
+
+.btn-top1 {
+  color: rgb(102, 97, 97);
+  width: 250px;
+  height: 50px;
+  margin-left: 70px;
+  padding-top: 20px;
+  padding: 12px 20px !important;
+  border-color: rgb(102, 97, 97) !important;
+}
+
+.btn-top1:hover {
+  color: #ffffff !important;
+  background-color: rgb(102, 97, 97);
+}
+
+.btn-top1 .btn-label {
+  display: block;
+  text-align: left;
+  line-height: 1;
+  margin-left: 20px;
+  /* padding-top:10px; */
+  /* font-size: 20px;
+  padding-left: 15px;
+  margin-top: 15px; */
+}
+.btn-top1 .btn-caption {
+    font-size: 16px;
+    /* font-weight: 700; */
+    /* padding-top:10px; */
+  }
+  .bounce {
+    animation: bounce 1s infinite ease-in-out;
+  }
+  .main-banner {
+    animation: show-image 2s ease-in-out forwards;
+  }
+  
+  @keyframes show-image {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+ @media screen and (max-width: 780px) {
+  .header{
+    background: none;
+  }
+  
+ }

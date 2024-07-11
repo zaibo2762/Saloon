@@ -1,0 +1,34 @@
+<div>
+<div class="heading">
+    <h2>Get in Reasonable Price</h2>
+    <div class="line"></div>
+    <p>Salon Online App Is Your go-to platform for hassle-free appointments.Here's how it Works:</p>
+</div>
+<div class="pricing-container">
+    <div class="pricing-toggle">
+      <span>Monthly</span>
+      <mat-slide-toggle   (change)="onToggleChange($event)"></mat-slide-toggle>
+      <span>Yearly</span>
+    </div>
+  
+    <div class="pricing-plans">
+        @for (plan of plans; track plan) {
+      <div class="pricing-plan">
+        <h2>{{ plan.title }}</h2>
+        <div class="price">
+            ${{ priceType === 'Monthly'? plan.monthlyPrice : plan.yearlyPrice }}
+        </div>
+        <p class="description">{{ plan.description }}</p>
+        <ul class="features">
+            @for (feature of plan.features; track feature) {
+          <li >
+            <fa-icon [icon]="circle"></fa-icon> {{ feature }}
+          </li>
+        }
+        </ul>
+        <button class="btn-get-started" >Get Started</button>
+      </div>
+    }
+    </div>
+  </div>
+</div>
