@@ -1,34 +1,33 @@
-<div>
-<div class="heading">
+<div class="container">
+  <div class="heading text-center">
     <h2>Get in Reasonable Price</h2>
-    <div class="line"></div>
-    <p>Salon Online App Is Your go-to platform for hassle-free appointments.Here's how it Works:</p>
-</div>
-<div class="pricing-container">
-    <div class="pricing-toggle">
+    <div class="line mb-4"></div>
+    <p class="lead">Salon Online App Is Your go-to platform for hassle-free appointments. Here's how it Works:</p>
+  </div>
+  <div class="pricing-container">
+    <div class="pricing-toggle d-flex justify-content-center mb-4">
       <span>Monthly</span>
-      <mat-slide-toggle   (change)="onToggleChange($event)"></mat-slide-toggle>
+      <mat-slide-toggle (change)="onToggleChange($event)"></mat-slide-toggle>
       <span>Yearly</span>
     </div>
-  
-    <div class="pricing-plans">
-        @for (plan of plans; track plan) {
-      <div class="pricing-plan">
-        <h2>{{ plan.title }}</h2>
-        <div class="price">
+    <div class="pricing-plans row justify-content-center">
+      @for (plan of plans; track plan) {
+        <div class="pricing-plan col-md-4 col-sm-6 mb-4">
+          <h2>{{ plan.title }}</h2>
+          <div class="price">
             ${{ priceType === 'Monthly'? plan.monthlyPrice : plan.yearlyPrice }}
-        </div>
-        <p class="description">{{ plan.description }}</p>
-        <ul class="features">
+          </div>
+          <p class="description">{{ plan.description }}</p>
+          <ul class="features list-unstyled">
             @for (feature of plan.features; track feature) {
-          <li >
-            <fa-icon [icon]="circle"></fa-icon> {{ feature }}
-          </li>
-        }
-        </ul>
-        <button class="btn-get-started" >Get Started</button>
-      </div>
-    }
+              <li>
+                <fa-icon [icon]="circle"></fa-icon> {{ feature }}
+              </li>
+            }
+          </ul>
+          <button class="btn-get-started btn btn-primary">Get Started</button>
+        </div>
+      }
     </div>
   </div>
 </div>
